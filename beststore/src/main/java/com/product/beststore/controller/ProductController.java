@@ -32,6 +32,7 @@ public class ProductController {
 	@GetMapping({"","/"})
 	public String showProductList(Model model) {
 		System.out.println("hello");
+		System.out.println("PUSH");
 		List<Products> products = proRepo.findAll(Sort.by(Sort.Direction.DESC, "id"));
 		
 		
