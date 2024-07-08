@@ -33,7 +33,7 @@ public class ProductController {
 	public String showProductList(Model model) {
 		System.out.println("hello");
 		System.out.println("PUSH");
-		System.out.println("hello");
+		System.out.println("hello1");
 
 		List<Products> products = proRepo.findAll(Sort.by(Sort.Direction.DESC, "id"));
 		
